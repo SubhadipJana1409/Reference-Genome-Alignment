@@ -1,0 +1,2 @@
+chrom	start	end	motif	annotated	novel	canonical	uniq_reads	mm_reads
+chr22	37582979	37589938	1	0	True	True	0	1
