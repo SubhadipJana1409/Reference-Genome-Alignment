@@ -1,0 +1,7 @@
+aligner,type,avg_map_pct,std_map_pct,avg_time_s,notes
+bowtie2,RNA-seq,99.999,0.001,6.0,FM-index; fast for DNA; no splice support
+bowtie2,WGS,99.992,0.011,12.0,FM-index; fast for DNA; no splice support
+bwa_mem,WGS,100.0,0.0,14.0,Gold-standard DNA aligner; splice-unaware; seed-extend
+minimap2,WGS,99.998,0.003,10.0,Minimizer-based; sr mode ~20-30% faster than BWA; comparable accuracy
+star_1pass,RNA-seq,100.266,0.23,8.0,Splice-aware; single pass; fast but lower novel junction sensitivity
+star_2pass,RNA-seq,100.386,0.024,18.0,Splice-aware; 2-pass boosts novel junction detection
