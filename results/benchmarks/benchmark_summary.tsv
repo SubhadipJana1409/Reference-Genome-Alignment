@@ -1,0 +1,7 @@
+aligner	type	n	avg_map_pct	avg_pp_pct	avg_chimeric	avg_mm	avg_wall_s	avg_rss_mb	avg_rss_gb
+bowtie2	WGS	3	99.99	98.45	0.0	0.0	46.8	130.7	0.128
+bowtie2_rna	RNA-seq	3	100.0	100.0	0.0	0.0	44.5	130.5	0.127
+bwa_mem	WGS	3	100.0	100.0	0.0	0.0	31.8	276.2	0.27
+minimap2	WGS	3	100.0	100.0	0.0	0.0	17.7	393.0	0.384
+star_1pass	RNA-seq	3	100.0	99.71	0.0	1030.0	20.5	939.9	0.918
+star_2pass	RNA-seq	3	100.0	99.71	0.0	1028.0	41.8	1657.5	1.619
