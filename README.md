@@ -215,10 +215,15 @@ day2_alignment_benchmark/
 │   │
 │   └── benchmarks/
 │       ├── benchmark_full.tsv              # Step 3+5 — all 18 samples × 14 metrics
-│       ├── benchmark_summary.tsv           # Per-aligner averages
+│       ├── benchmark_summary.csv           # Per-aligner averages (CSV)
+│       ├── benchmark_summary.tsv           # Per-aligner averages (TSV)
+│       ├── detailed_stats.tsv              # Detailed alignment statistics
 │       ├── timing_with_memory_clean.tsv    # Wall-clock + peak RSS
-│       ├── performance_matrix.png          ← Step 5 main figure
+│       ├── insert_size_distribution.png    ← Insert size KDE + boxplot
 │       ├── mapping_rates.png               ← Step 3
+│       ├── multimappers.png                ← Multi-mapper rate comparison
+│       ├── performance_matrix.png          ← Step 5 main figure
+│       ├── properly_paired.png             ← Properly paired % comparison
 │       ├── star_junction_analysis.png      ← Step 4
 │       └── wallclock_time.png
 │
