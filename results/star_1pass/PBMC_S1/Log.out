@@ -1,0 +1,168 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-04-14T23:10:25+00:00 <place not set in Debian package>
+##### Command Line:
+/usr/lib/rna-star/bin/STAR-avx2 --runMode alignReads --genomeDir /home/claude/day2_project/results/indexes/star --readFilesIn /home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz /home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz --readFilesCommand zcat --outSAMtype BAM SortedByCoordinate --outFileNamePrefix /home/claude/day2_project/results/star_1pass/PBMC_S1/ --runThreadN 4 --outSAMattributes NH HI AS NM
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 /home/claude/day2_project/results/star_1pass/PBMC_S1/
+###### All USER parameters from Command Line:
+runMode                       alignReads        ~RE-DEFINED
+genomeDir                     /home/claude/day2_project/results/indexes/star     ~RE-DEFINED
+readFilesIn                   /home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz   /home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+outFileNamePrefix             /home/claude/day2_project/results/star_1pass/PBMC_S1/     ~RE-DEFINED
+runThreadN                    4     ~RE-DEFINED
+outSAMattributes              NH   HI   AS   NM        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           alignReads   
+runThreadN                        4
+genomeDir                         /home/claude/day2_project/results/indexes/star
+readFilesIn                       /home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz   /home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz   
+readFilesCommand                  zcat   
+outFileNamePrefix                 /home/claude/day2_project/results/star_1pass/PBMC_S1/
+outSAMtype                        BAM   SortedByCoordinate   
+outSAMattributes                  NH   HI   AS   NM   
+
+-------------------------------
+##### Final effective command line:
+/usr/lib/rna-star/bin/STAR-avx2   --runMode alignReads      --runThreadN 4   --genomeDir /home/claude/day2_project/results/indexes/star   --readFilesIn /home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz   /home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz      --readFilesCommand zcat      --outFileNamePrefix /home/claude/day2_project/results/star_1pass/PBMC_S1/   --outSAMtype BAM   SortedByCoordinate      --outSAMattributes NH   HI   AS   NM   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rw-r--r-- 1 root root 6686654 Mar 16 19:32 /home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz
+
+   readsCommandsFile:
+exec > "/home/claude/day2_project/results/star_1pass/PBMC_S1/_STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "/home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rw-r--r-- 1 root root 6687069 Mar 16 19:32 /home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz
+
+   readsCommandsFile:
+exec > "/home/claude/day2_project/results/star_1pass/PBMC_S1/_STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "/home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /usr/lib/rna-star/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 4   --genomeDir /home/claude/day2_project/results/indexes/star   --genomeFastaFiles /home/claude/day2_project/data/reference/chr22.fa      --genomeSAindexNbases 10   --sjdbGTFfile /home/claude/day2_project/data/reference/gencode_v44_chr22_gtf   --sjdbOverhang 149
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              /home/claude/day2_project/data/reference/chr22.fa        ~RE-DEFINED
+genomeSAindexNbases           10     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  149     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   /home/claude/day2_project/data/reference/gencode_v44_chr22_gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               53650012   327359079        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	chr22	51000000	0
+--sjdbOverhang = 149 taken from the generated genome
+Started loading the genome: Mon Mar 16 19:52:03 2026
+
+Genome: size given as a parameter = 53650012
+SA: size given as a parameter = 327359079
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=10  nSAi=1398100
+nGenome=53650012;  nSAbyte=327359079
+GstrandBit=32   SA number of indices=79359776
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 53650012 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 53650012 bytes
+SA file size: 327359079 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 327359079 bytes
+Loading SAindex ... done: 6116787 bytes
+Finished loading the genome: Mon Mar 16 19:52:03 2026
+
+Processing splice junctions database sjdbN=8468,   pGe.sjdbOverhang=149 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Created thread # 1
+Starting to map file # 0
+mate 1:   /home/claude/day2_project/data/rnaseq/PBMC_S1_R1.fastq.gz
+mate 2:   /home/claude/day2_project/data/rnaseq/PBMC_S1_R2.fastq.gz
+Created thread # 2
+Created thread # 3
+Thread #0 end of input stream, nextChar=-1
+Completed: thread #3
+BAM sorting: 82280 mapped reads
+BAM sorting bins genomic start loci:
+1	0	15758096
+2	0	16494325
+3	0	17281926
+4	0	18018161
+5	0	18720376
+6	0	19450844
+7	0	20181523
+8	0	20932733
+9	0	21638525
+10	0	22343062
+11	0	23038990
+12	0	23741090
+13	0	24521168
+14	0	25282253
+15	0	26000398
+16	0	26706173
+17	0	27450945
+18	0	28165677
+19	0	28971940
+20	0	29739238
+21	0	30495589
+22	0	31271614
+23	0	31999938
+24	0	32703480
+25	0	33426533
+26	0	34175625
+27	0	34886742
+28	0	35576124
+29	0	36307269
+30	0	37040500
+31	0	37725365
+32	0	38472804
+33	0	39188736
+34	0	39870405
+35	0	40593414
+36	0	41336764
+37	0	42091401
+38	0	42872920
+39	0	43607071
+40	0	44329519
+41	0	45062031
+42	0	45794815
+43	0	46517090
+44	0	47271662
+45	0	48051211
+46	0	48784139
+47	0	49531275
+48	0	50287595
+Completed: thread #1
+Completed: thread #2
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Mar 16 19:52:19 ..... finished mapping
+RAM after mapping:
+VmSize:	1222548 kB; VmRSS:	947740 kB; 
+RAM after freeing genome index memory:
+VmSize:	844488 kB; VmRSS:	569680 kB; 
+Mar 16 19:52:20 ..... started sorting BAM
+Max memory needed for sorting = 1563185
+ALL DONE!
