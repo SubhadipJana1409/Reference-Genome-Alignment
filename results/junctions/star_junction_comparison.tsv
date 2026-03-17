@@ -1,0 +1,4 @@
+sample	pass1_total	pass2_total	pass1_novel	pass2_novel	pass1_annotated	pass2_annotated	reclassified	pass1_canonical	pass1_noncanonical
+PBMC_S1	1	1	1	0	0	1	1	1	0
+PBMC_S2	0	0	0	0	0	0	0	0	0
+PBMC_S3	3	3	2	0	1	3	2	2	1
